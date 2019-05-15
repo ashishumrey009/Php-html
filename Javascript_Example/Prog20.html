@@ -1,0 +1,18 @@
+<html>
+<head>
+<script>
+function setText()
+{
+	var s=document.getElementById("t1").value;	
+	var a=parseInt(s);
+	a++;	
+	document.getElementById("p1").innerHTML="Value is:"+a;
+}
+</script>
+</head>
+<body>
+Enter No<input type="text" id="t1"><br>
+<input type="submit" value="Increment" onclick="setText()"><br>
+<p id="p1"></p>
+</body>
+</html>

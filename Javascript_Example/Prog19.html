@@ -1,0 +1,18 @@
+<html>
+<head>
+	<script>
+	function setText()
+	{
+		var s1=document.getElementById("t1").value;	
+		var s2=document.getElementById("t2").value;	
+		document.getElementById("p1").innerHTML=s1+" "+s2;
+	}
+	</script>
+</head>
+<body>
+	First Name<input type="text" id="t1"><br>
+	Second Name<input type="text" id="t2"><br>
+	<input type="submit" value="Join" onclick="setText()"><br>
+	<p id="p1">full name</p>
+</body>
+</html>

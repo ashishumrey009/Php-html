@@ -1,0 +1,32 @@
+<html>
+<head>
+<script>
+function getPrice()
+{
+	var s1=document.getElementById("st1").value;	
+	if(s1=="Laptop")
+	{
+	 document.getElementById("p1").innerHTML="Price is: 26000";
+	}
+	if(s1=="Mobile")
+	{
+	 document.getElementById("p1").innerHTML="Price is: 12000";
+	}
+	if(s1=="Tablet")
+	{
+	 document.getElementById("p1").innerHTML="Price is: 8000";
+	}
+}
+</script>
+</head>
+<body>
+Select Product
+<select id="st1">
+	<option value="Laptop">Laptop</option>
+	<option value="Mobile">Mobile</option>
+	<option value="Tablet">Tablet</option>
+</select>
+<input type="submit" value="Get Price" onclick="getPrice()"><br>
+<p id="p1"></p>
+</body>
+</html>

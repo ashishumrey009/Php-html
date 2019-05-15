@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function Greater()
+{
+	var s1=document.getElementById("t1").value;	
+	var s2=document.getElementById("t2").value;	
+	var a=parseInt(s1);
+	var b=parseInt(s2);
+	if(a>b)
+	{
+	 document.getElementById("p1").innerHTML=a+" is greater";
+	}
+	else
+	{
+	 document.getElementById("p1").innerHTML=b+" is greater";
+	}
+}
+</script>
+</head>
+<body>
+Enter 1st No<input type="text" id="t1"><br>
+Enter 2nd No<input type="text" id="t2"><br>
+<input type="submit" value="Greater" onclick="Greater()"><br>
+<p id="p1"></p>
+</body>
+</html>
